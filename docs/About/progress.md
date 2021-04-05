@@ -1,0 +1,2 @@
+# About
+The Molly Engine documentation is currently under development. It aims to document all of the engines features as well as provide some project examples as references on how you can use/implement the knowledge gained from the docs.
