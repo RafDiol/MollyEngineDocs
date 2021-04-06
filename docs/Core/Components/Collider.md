@@ -9,8 +9,6 @@ The collider is an interface used by [Sprite2D](Sprite2D.md) and [Shape2D](Shape
 | :---        |    :----   | :----: | :---:
 | isColliderDisabled | If the collider is disabled no collision detection should be possible even if a collision checking method is called |bool| Both |
 
-<br></br>
-
 ### Method Implementations
 
 | Method     | Description | Return Type |

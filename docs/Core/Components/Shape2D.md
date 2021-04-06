@@ -17,7 +17,6 @@ The Shape2D is used to render squares with a single color. It is build on top of
 | Vector2 position, Scale scale, Color color |
 |Vector2 position, Scale scale |
 
-<br></br>
 Useful links:
 
 * [GameObject](GameObject.md)

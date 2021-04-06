@@ -28,4 +28,4 @@ The rendering algorithm used by MollyEngine is far from perfect and some flaws d
 
 #### Feature planning
 
-The rendering algorithm is on my TO-DO list of thing to fix/update since I have already come up with a few ways too make it more efficient.
+The rendering algorithm is on my TODO list of thing to fix/update since I have already come up with a few ways too make it more efficient.

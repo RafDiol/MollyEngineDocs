@@ -64,3 +64,4 @@ Useful links:
 
 * [Sprite2D](Components/Sprite2D.md)
 * [Shape2D](Components/Shape2D.md)
+* [Scale](Builtin_Datatypes/scale.md)

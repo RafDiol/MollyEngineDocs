@@ -10,8 +10,6 @@ This class is used to represent 2D positions and vectors.
 | X        |    The X component of the vector. | float|
 | Y     | The Y component of the vector. | float |
 
-<br/><br/>
-
 ### Static Methods
 
 | Method      | Description |
@@ -22,8 +20,6 @@ This class is used to represent 2D positions and vectors.
 | Subtract | Subtracts two vectors and returns a new vector holding the result|
 | Multiply | Multiplies two vectors and returns a new vector holding the result|
 | Divide |Divides two vectors and returns a new vector holding the result|
-
-<br/><br/>
 
 ### Constructors
 | Signature      | Description |
