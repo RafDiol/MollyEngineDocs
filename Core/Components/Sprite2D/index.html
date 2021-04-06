@@ -60,6 +60,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#sprite2d" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -271,10 +276,62 @@
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Sprite2D
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Sprite2D
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-methods" class="md-nav__link">
+    Public Methods
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    Constructors
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -548,15 +605,140 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-methods" class="md-nav__link">
+    Public Methods
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    Constructors
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  <h1>Sprite2D</h1>
-                
-                
+                <h1 id="sprite2d">Sprite2D</h1>
+<h3 id="description">Description</h3>
+<p>Most if not all of your GameObjects will be of type Sprite2D. Sprite2D allows for the rendering/control of an image on the screen. It is a child of the <a href="../GameObject/">GameObject</a> class and it also implements the <a href="../Collider/">Collider</a> interface. The implementations/methods/properties inherited by those classes will not be listed here and can be found at the appropriate docs.</p>
+<h3 id="public-methods">Public Methods</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Method &amp; Signature</th>
+<th align="left">Description</th>
+<th align="center">Return Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">setImage(string directory)</td>
+<td align="left">Sets the sprites image to another image located in the giver directory</td>
+<td align="center">void</td>
+</tr>
+<tr>
+<td align="left">setImage(string directory, Scale scale)</td>
+<td align="left">Sets the sprites image to another image located in the giver directory and resized it accordingly</td>
+<td align="center">void</td>
+</tr>
+<tr>
+<td align="left">getImage</td>
+<td align="left">Returns the sprites image</td>
+<td align="center">Bitmap</td>
+</tr>
+</tbody>
+</table>
+<h3 id="properties">Properties</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Property</th>
+<th align="left">Description</th>
+<th align="center">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Directory</td>
+<td align="left">The directory in which the sprites image is stored</td>
+<td align="center">string</td>
+</tr>
+</tbody>
+</table>
+<h3 id="constructors">Constructors</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Signature</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Vector2 position, Scale scale, string directory, string tag, uint renderingPriority</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="left">Vector2 position, Scale scale, string directory, string tag</td>
+<td align="center">renderPriority has its default value 0</td>
+</tr>
+<tr>
+<td align="left">Vector2 position, Scale scale, string directory</td>
+<td align="center">renderPriority has its default value 0 and tag is equal to an empty string</td>
+</tr>
+</tbody>
+</table>
+<p>Useful links:</p>
+<ul>
+<li><a href="../GameObject/">GameObject</a></li>
+<li><a href="../../MollyEngineClass/">MollyEngine Class</a></li>
+<li><a href="../Camera/">Camera</a></li>
+</ul>
                 
               
               
