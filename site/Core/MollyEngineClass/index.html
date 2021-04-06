@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Rafael Diolatzis">
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>MollyEngineClass - MollyEngine</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "MollyEngineClass";
+    var mkdocs_page_input_path = "Core\\MollyEngineClass.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> MollyEngine</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../quick_start/">Quick Start</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Core</span></p>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">MollyEngineClass</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#description">Description</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#events">Events</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#game-window-methods">Game Window Methods</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#constructors">Constructors</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#public-properties">Public Properties</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#misc">Misc</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Components</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Components/GameObject/">GameObject</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Components/Sprite2D/">Sprite2D</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Components/Shape2D/">Shape2D</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Components/Collider/">Collider</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Components/Camera/">Camera</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Data Types</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Builtin_Datatypes/vector2/">Vector2</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Builtin_Datatypes/scale/">Scale</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../log/">Log</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Extensions</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Extensions/PlayerController/">PlayerController</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Extensions/Animator/">Animator</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Misc</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Misc/renderer/">Renderer</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">About</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../About/progress/">Current Stage of Docs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../About/license/">License</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">MollyEngine</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Core &raquo;</li>
+        
+      
+    
+    <li>MollyEngineClass</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="mollyengine-class">MollyEngine Class</h1>
+<h3 id="description">Description</h3>
+<p>The MollyEngine class is one of the most important classes in the entire engine. You can think of this class as you game's class since all the events such as the OnLoad can only be overridden from this class.</p>
+<h3 id="events">Events</h3>
+<p>You can implement all of the following methods in you Game class by using the 'override' keyword.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Method</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">OnLoad</td>
+<td align="left">This method is only called once on startup</td>
+</tr>
+<tr>
+<td align="left">OnDraw</td>
+<td align="left">This method is called directly before the window is refreshed/re-rendered</td>
+</tr>
+<tr>
+<td align="left">OnUpdate</td>
+<td align="left">This method is called after the window has been refreshed</td>
+</tr>
+<tr>
+<td align="left">OnClose</td>
+<td align="left">If you game exits normally without any exceptions this method will be called. This method gives the developer a single argument 'e' of type 'System.ComponentModel.CancelEventArgs' which allows him to cancel the game's shutdown</td>
+</tr>
+<tr>
+<td align="left">OnException</td>
+<td align="left">If an exception occurs during run-time this method will be called, which allows the developer to figure out what went wrong through the 'e' argument of type Exception.</td>
+</tr>
+<tr>
+<td align="left">OnKeyDown</td>
+<td align="left">Captures when a key is pressed.A KeyEventArg variable ispassed in the method so that the program can determine which key was pressed</td>
+</tr>
+<tr>
+<td align="left">OnKeyUp</td>
+<td align="left">Captures when a key is released.A KeyEventArg variable is passed in the method so that the program can determine which key was pressed</td>
+</tr>
+<tr>
+<td align="left">OnMouseDown</td>
+<td align="left">Captures any sort of mouse click. A MouseEventArgs variable is passed in the method so for potential further processing of this click</td>
+</tr>
+<tr>
+<td align="left">OnMouseUp</td>
+<td align="left">Detects when the moused is released.A MouseEventArgs variable is passed in the method so for potential further processing</td>
+</tr>
+<tr>
+<td align="left">OnMouseDoubleClicked</td>
+<td align="left">Captures a mouse click. A MouseEventArgs variable is passed in the method so for potential further processing</td>
+</tr>
+<tr>
+<td align="left">OnMouseMoved</td>
+<td align="left">Captures mouse movement. A MouseEventArgs variable is passed in the method so for potential further processing</td>
+</tr>
+</tbody>
+</table>
+<p><br></br></p>
+<h3 id="game-window-methods">Game Window Methods</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Method</th>
+<th align="left">Description</th>
+<th align="center">Return Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">setTitle</td>
+<td align="left">Updates the windows title</td>
+<td align="center">void</td>
+</tr>
+<tr>
+<td align="left">getTitle</td>
+<td align="left">Returns the windows title</td>
+<td align="center">string</td>
+</tr>
+</tbody>
+</table>
+<p><br></br></p>
+<h3 id="constructors">Constructors</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Constructor Signature</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Scale ScreenSize, string Title, FormWindowState state</td>
+<td align="left">The most detailed constructor of them all.</td>
+</tr>
+<tr>
+<td align="left">Scale ScreenSize, string Title</td>
+<td align="left">The 3rd ommited parameter of type FormWindowState is set to <strong>FormWindowState.Normal</strong></td>
+</tr>
+<tr>
+<td align="left">string Title</td>
+<td align="left">The state is set to Normal and the Scale to 512(Width), 512 (Height)</td>
+</tr>
+<tr>
+<td align="left">Scale ScreenSize</td>
+<td align="left">The state is set to Normal and the title to "New Game"</td>
+</tr>
+</tbody>
+</table>
+<p><br></br></p>
+<h3 id="public-properties">Public Properties</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Property</th>
+<th align="left">Description</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">backgroundColor</td>
+<td align="left">The background color of your game</td>
+<td align="left">System.Drawing.Color</td>
+</tr>
+</tbody>
+</table>
+<p><br></br></p>
+<h3 id="misc">Misc</h3>
+<p>The misc are uncategorized or rarely used methods or properties. Some Misc methods/properties may not be documented</p>
+<table>
+<thead>
+<tr>
+<th align="left">Method</th>
+<th align="left">Description</th>
+<th align="center">Return Type</th>
+<th align="center">Is Static</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">RegisterGameObject</td>
+<td align="left">Makes a GameObject eligible for rendering. You only need to use if you are creating your own/custom GameObject or expanding a child of the GameObject such as the Sprite2D</td>
+<td align="center">void</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td align="left">UnregisterGameObject</td>
+<td align="left">Makes a GameObject uneligible for rendering. You only need to use if you are creating your own/custom GameObject or expanding a child of the GameObject such as the Sprite2D</td>
+<td align="center">void</td>
+<td align="center">Yes</td>
+</tr>
+</tbody>
+</table>
+<p><br></br>
+Useful links:</p>
+<ul>
+<li><a href="../Components/Sprite2D/">Sprite2D</a></li>
+<li><a href="../Components/Shape2D/">Shape2D</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Components/GameObject/" class="btn btn-neutral float-right" title="GameObject">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../quick_start/" class="btn btn-neutral" title="Quick Start"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../../quick_start/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Components/GameObject/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

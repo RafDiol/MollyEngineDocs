@@ -23,3 +23,10 @@ Think of the GameObject class as the root of all components. It defines a few ne
 | Tag | A string identifier for the object | string |
 | renderingPriority | The highest number will be infont of a smaller one, check out the [renderer section](../../Misc/renderer.md) for more details on how the renderer works | uint |
 | type | Saves resources by specifing the type of the GameObject, find out more in the [renderer section](../../Misc/renderer.md) | System.Type |
+
+<br></br>
+Useful links:
+
+* [Sprite2D](Sprite2D.md)
+* [MollyEngine Class](../MollyEngineClass.md)
+* [Vector2](../Builtin_Datatypes/vector2.md)

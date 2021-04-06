@@ -37,7 +37,7 @@ You can implement all of the following methods in you Game class by using the 'o
 | Constructor Signature | Description |
 | :---        |    :----   |
 | Scale ScreenSize, string Title, FormWindowState state| The most detailed constructor of them all. |
-| Scale ScreenSize, string Title | The 3rd ommited parameter of type FormWindowState is set to **FormWindowState.Normal***|
+| Scale ScreenSize, string Title | The 3rd ommited parameter of type FormWindowState is set to **FormWindowState.Normal**|
 | string Title | The state is set to Normal and the Scale to 512(Width), 512 (Height)|
 | Scale ScreenSize | The state is set to Normal and the title to "New Game" |
 
@@ -58,3 +58,9 @@ The misc are uncategorized or rarely used methods or properties. Some Misc metho
 | :---        |    :----   |    :----:   |   :----:   |
 | RegisterGameObject | Makes a GameObject eligible for rendering. You only need to use if you are creating your own/custom GameObject or expanding a child of the GameObject such as the Sprite2D | void | Yes |
 | UnregisterGameObject | Makes a GameObject uneligible for rendering. You only need to use if you are creating your own/custom GameObject or expanding a child of the GameObject such as the Sprite2D | void | Yes |
+
+<br></br>
+Useful links:
+
+* [Sprite2D](Components/Sprite2D.md)
+* [Shape2D](Components/Shape2D.md)

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Rafael Diolatzis">
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Quick Start - MollyEngine</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Quick Start";
+    var mkdocs_page_input_path = "quick_start.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> MollyEngine</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Quick Start</a>
+    <ul class="current">
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Core</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Core/MollyEngineClass/">MollyEngineClass</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Components</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Core/Components/GameObject/">GameObject</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Core/Components/Sprite2D/">Sprite2D</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Core/Components/Shape2D/">Shape2D</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Core/Components/Collider/">Collider</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Core/Components/Camera/">Camera</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Data Types</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Core/Builtin_Datatypes/vector2/">Vector2</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Core/Builtin_Datatypes/scale/">Scale</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Core/log/">Log</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Extensions</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Extensions/PlayerController/">PlayerController</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Extensions/Animator/">Animator</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Misc</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Misc/renderer/">Renderer</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">About</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../About/progress/">Current Stage of Docs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../About/license/">License</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">MollyEngine</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Quick Start</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="quick-start">Quick Start</h1>
+<p>In this quick start guide we will make game in which the player will be collecting coins.</p>
+<p>To begin with lets create our game window as follows</p>
+<pre><code class="language-csharp">public class DemoGame : Core.MollyEngine
+{
+    public DemoGame() : base(&quot;New Game&quot;)
+    {
+
+    }
+}
+</code></pre>
+<p>The code above creates our <strong>DemoGame</strong> object and passes in a parameter, a title.</p>
+<p>Now that our DemoGame object is setup lets get started on setting up the player movement. MollyEngine offers some great extensions which help you out prototype and implement your ideas faster, one of which is the <a href="../Extensions/PlayerController/"><strong>PlayerController extension</strong></a>. The engine offers some event's, similarly to Unity, Unreal etc that you can implement such as <strong>OnLoad</strong>.</p>
+<pre><code class="language-csharp">public override void OnLoad()
+{
+    player = new Sprite2D(new Vector2(100, 100), new Scale(100, 100),   Path.GetFullPath(@&quot;Images\player.jpg&quot;) , &quot;Player&quot;, 1);
+    playerController = new PlayerController(player, speed);
+}
+</code></pre>
+<p><strong>Remember: Make sure to import MollyEngine.Extensions</strong></p>
+<p>This code creates a <a href="../Core/Components/Sprite2D/">Sprite2D</a>, which is our player and passes him to the player controller extension.The constructor used for our player sprite has the following signature:
+<code>Sprite2D(Vector2 position, Scale scale, string directory, string tag, uint renderingPriority)</code>.</p>
+<p>The <a href="../Extensions/PlayerController/">PlayerController extension</a> needs to be implemented in the following events for it to work properly:</p>
+<pre><code class="language-csharp">public override void OnUpdate()
+{
+    playerController.Update();
+}
+
+public override void OnKeyDown(KeyEventArgs e)
+{
+    playerController.OnKeyDownHandler(e);
+}
+
+public override void OnKeyUp(KeyEventArgs e)
+{
+    playerController.OnKeyUpHandler(e);
+}
+</code></pre>
+<p><strong>Remember: PlayerController is an extension and not part of the core framework and that's why you need to call the above methods by yourself!</strong></p>
+<p>We should at this point have a character which can move around freely withing our screen, so its time we spawn in our coins. Coins are just sprites that need to be spawned at a random point on startup so it only makes sense that we add the coin spawning code to the <strong>OnLoad</strong> method. </p>
+<pre><code class="language-csharp">public override void OnLoad()
+{
+    // Previous Code
+    player = new Sprite2D(new Vector2(100, 100), new Scale(100, 100),   Path.GetFullPath(@&quot;Images\player.jpg&quot;) , &quot;Player&quot;, 1);
+    playerController = new PlayerController(player, speed);
+    //
+    // New Code - Coin spawning
+    //
+    for (int i = 0; i &lt; 30; i++)
+    {
+       Sprite2D coin = new Sprite2D(new Vector2(rnd.Next(0, 1200), rnd.Next(0, 800)), new Scale(50, 50), Path.GetFullPath(@&quot;Images\coin.jpg&quot;), $&quot;coin{i}&quot;);
+    }
+}
+</code></pre>
+<p><strong>Remember: rnd is of type System.Random so you will need to create a variable of type System.Random named rnd!</strong></p>
+<p>Go ahead test it out, our coins are spawning in but you may have noticed that we cannot pick up/collect those coins, so how would we go about implementing the coin collection system? Well we will need to do some collision detection preferably on the <strong>OnUpdate</strong> method/event.</p>
+<pre><code class="language-csharp">public override void OnUpdate()
+{
+    // Previous Code
+    playerController.Update();
+    //
+    // New Code - Collision detection
+    // 
+    GameObject collide;
+   if (sprite.isColliding(out collide))
+   {
+        Sprite2D coin = (Sprite2D)collide;
+        coin.DestroySelf();
+   }
+}
+</code></pre>
+<p>The code above checks every frame to see whether or not our player is colliding with something, if it is the collide is passed to the collide variable as a <a href="../Core/Components/GameObject/">GameObject</a>. Then we create a <a href="../Core/Components/Sprite2D/">Sprite2D</a> named coin out of the <a href="../Core/Components/GameObject/">GameObject</a> and destroy it, essentially removing it from the game.</p>
+<p>The full code is available here:</p>
+<pre><code class="language-csharp">using System;
+using System.Windows.Forms;
+using MollyEngine;
+using MollyEngine.Core;
+using System.IO;
+using MollyEngine.Extensions;
+
+namespace MollyEngine
+{
+    public class DemoGame : Core.MollyEngine
+    {
+        Sprite2D sprite;
+        ulong speed = 1;
+        Random rnd = new Random();
+        PlayerController playerController;
+
+        public DemoGame() : base(&quot;New Game&quot;)
+        {
+
+        }
+
+        public override void OnLoad()
+        {
+            sprite = new Sprite2D(new Vector2(100, 100), new Scale(100, 100), Path.GetFullPath(@&quot;Images\player.jpg&quot;) , &quot;Player&quot;, 1);
+            playerController = new PlayerController(sprite, speed);
+            for (int i = 0; i &lt; 30; i++)
+            {
+                Sprite2D coin = new Sprite2D(new Vector2(rnd.Next(0, 1200), rnd.Next(0, 800)), new Scale(50, 50), Path.GetFullPath(@&quot;Images\coin.jpg&quot;), $&quot;coin{i}&quot;);
+            }
+        }
+
+        public override void OnUpdate()
+        {
+            playerController.Update();
+            GameObject collide;
+            if (sprite.isColliding(out collide))
+            {
+                Sprite2D coin = (Sprite2D)collide;
+                coin.DestroySelf();
+            }
+        }
+
+        public override void OnKeyDown(KeyEventArgs e)
+        {
+            playerController.OnKeyDownHandler(e);
+        }
+
+        public override void OnKeyUp(KeyEventArgs e)
+        {
+            playerController.OnKeyUpHandler(e);
+        }
+    }
+}
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Core/MollyEngineClass/" class="btn btn-neutral float-right" title="MollyEngineClass">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Core/MollyEngineClass/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
