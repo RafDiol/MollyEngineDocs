@@ -523,22 +523,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#order-of-operation" class="md-nav__link">
-    Order of operation
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
-    Notes
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#feature-planning" class="md-nav__link">
-    Feature planning
+  <a href="#how-does-it-render" class="md-nav__link">
+    How does it render
   </a>
   
 </li>
@@ -552,6 +538,57 @@
   
 </nav>
       
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" type="checkbox" id="__nav_5_2" >
+      
+      <label class="md-nav__link" for="__nav_5_2">
+        Rendering Pipelines
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Rendering Pipelines" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          Rendering Pipelines
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MollyNewPipeline/" class="md-nav__link">
+        Molly New Pipeline
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LegacyPipeline/" class="md-nav__link">
+        Legacy Pipeline
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -663,22 +700,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#order-of-operation" class="md-nav__link">
-    Order of operation
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
-    Notes
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#feature-planning" class="md-nav__link">
-    Feature planning
+  <a href="#how-does-it-render" class="md-nav__link">
+    How does it render
   </a>
   
 </li>
@@ -707,29 +730,13 @@
 <h2 id="how-does-it-work">How Does it Work</h2>
 <h4 id="when-is-it-called">When is it called</h4>
 <p>The renderer method is being called every frame after the OnDraw event has been completed.</p>
-<h4 id="order-of-operation">Order of operation</h4>
-<p>The rendering does the following, in the following order.</p>
-<ol>
-<li>
-<p>Clears the screen and fills it with the background color.</p>
-</li>
-<li>
-<p>Updates the camera position.</p>
-</li>
-<li>
-<p>Creates a list of all the elements in the game it will need to render.</p>
-</li>
-<li>
-<p>Due to the fact that a <a href="../../Core/Components/Shape2D/">Shape2D</a> is rendered differently than a <a href="../../Core/Components/Sprite2D/">Sprite2D</a> and that the rendering list is made out of <a href="../../Core/Components/GameObject/">GameObjects</a> we need to identify every GameObject who's type is null/undefined.</p>
-</li>
-<li>
-<p>Loops through our list of GameObjects we need to render and checks whether or not the GameObjects priority is equal to the <code>currentRenderingPriority</code>. Every time the loop is completed the <code>currentRenderingPriority</code> is incremented and any items that have been rendered are removed from our list of GameObjects we need to render.</p>
-</li>
-</ol>
-<h4 id="notes">Notes</h4>
-<p>The rendering algorithm used by MollyEngine is far from perfect and some flaws do exist. For example if you have 2 objects(a and b) and objects a rendering priority is 0 while objects b rendering priority is 100 the loop will run 100 times untill the <code>currentRenderingPriority</code> reaches 100.</p>
-<h4 id="feature-planning">Feature planning</h4>
-<p>The rendering algorithm is on my TODO list of thing to fix/update since I have already come up with a few ways too make it more efficient.</p>
+<h4 id="how-does-it-render">How does it render</h4>
+<p>The renderer uses something known as rendering pipelines which allows all the rendering code to be handled by the pipeline and not the renderer itself. This allows for multiple rendering schemes/algorithms to be possible and it also allows for anyone how wants to contribute to the engine to be able to change the way the rendering system works without worrying if it may break some random piece of code and without having to delete the old code, since everything is split up into pipelines. You can find out more about how each pipeline works by clicking the following links.</p>
+<p>Currently Available Pipelines:</p>
+<ul>
+<li><a href="../MollyNewPipeline/">MollyNewPipeline</a></li>
+<li><a href="../LegacyPipeline/">Legacy Pipeline</a></li>
+</ul>
                 
               
               
@@ -763,13 +770,13 @@
         </a>
       
       
-        <a href="../../About/progress/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../MollyNewPipeline/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Current Stage of Docs
+              Molly New Pipeline
             </div>
           </div>
           <div class="md-footer__button md-icon">
